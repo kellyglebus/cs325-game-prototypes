@@ -40,7 +40,7 @@ let shared = {};
     this.load.image('top', 'assets/platform.png');
     this.load.image('star', 'assets/star.png');
     this.load.image('bomb', 'assets/bomb.png');
-    this.load.image('rocks', 'assets/rocks.jpg');
+    this.load.image('rocks', 'assets/rocks.png');
     this.load.image('fire', 'assets/fire.png');
   //  this.load.image('coin', 'assets/coin.png');
     this.load.spritesheet('dude', 'assets/dude.png',
@@ -72,7 +72,7 @@ let shared = {};
 
   function create(){
     //  A simple background for our game
-    this.add.image(380, 270, 'sky').setScale(2.1);
+    this.add.image(380, 270, 'sky').setScale(2.3);
 
     //  The platforms group contains the ground and the 2 ledges we can jump on
     platforms = this.physics.add.staticGroup();
