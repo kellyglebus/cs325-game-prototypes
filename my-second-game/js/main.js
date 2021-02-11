@@ -72,7 +72,7 @@ let shared = {};
 
   function create(){
     //  A simple background for our game
-    this.add.image(380, 270, 'sky').setScale(1.90);
+    this.add.image(380, 270, 'sky').setScale(2.1);
 
     //  The platforms group contains the ground and the 2 ledges we can jump on
     platforms = this.physics.add.staticGroup();
