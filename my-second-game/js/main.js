@@ -152,7 +152,6 @@ let shared = {};
 
     });
 
-    stars.setCollideWorldBounds(true);
 
     bombs = this.physics.add.group();
 
@@ -230,7 +229,7 @@ function collectStar (player, star)
         child.enableBody(true, child.x, 0, true, true);
         });
         level++;
-        levelText.setText('Level: ' + level);
+        levelText.setText('Score: ' + level);
         if (level > 5){
           gameOver = true;
           winOrLose = 'Win!';
