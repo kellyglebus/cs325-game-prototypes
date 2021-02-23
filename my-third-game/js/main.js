@@ -43,7 +43,7 @@ function preload ()
     this.load.image('food', 'assets/coconut.png');
     this.load.image('body', 'assets/bird.png');
     this.load.image('background', 'assets/background.jpg');
-  //  this.load.audio('theme','assets/dehydratedwater.mp3');
+    this.load.audio('theme','assets/dehydratedwater.mp3');
 }
 
 function create ()
@@ -51,7 +51,7 @@ function create ()
 
 
   this.add.image(380, 270, 'background').setScale(.25);
- // let music = this.sound.play('theme');
+  let music = this.sound.play('theme');
   scoreText = this.add.text(5, 5, 'score: 1', { fontSize: '20px', fill: '#87CEEB' });
 
 
