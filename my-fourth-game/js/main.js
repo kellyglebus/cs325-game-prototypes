@@ -58,26 +58,12 @@ class MyScene extends Phaser.Scene {
         this.sand4 = this.add.image(50, 580, 'sand').setScale(.3).setInteractive();
         this.sand5 = this.add.image(250, 500, 'sand').setScale(.3).setInteractive();
 
-        /*this.handleObjectInput(this.dirt1);
-        this.handleObjectInput(this.dirt2_5);
-        this.handleObjectInput(this.dirt2_6);
-        this.handleObjectInput(this.dirt2_7);
-        this.handleObjectInput(this.sand4);
-        this.handleObjectInput(this.sand5);*/
-
         this.gravel1 = this.add.image(320,30, 'gravel').setScale(.35).setInteractive();
         this.gravel2 = this.add.image(50,120, 'gravel').setScale(.4).setInteractive();
         this.sand6 = this.add.image(500, 400, 'sand').setScale(.3).setInteractive();
         this.sand7 = this.add.image(270, 300, 'sand').setScale(.3).setInteractive();
         this.dirt7 = this.add.image(130,300, 'dirt').setScale(.5).setInteractive();
         this.dirt9 = this.add.image(750,50, 'dirt').setScale(.5).setInteractive();
-
-        /*this.handleObjectInput(this.gravel1);
-        this.handleObjectInput(this.gravel2);
-        this.handleObjectInput(this.sand6);
-        this.handleObjectInput(this.sand7);
-        this.handleObjectInput(this.dirt7);
-        this.handleObjectInput(this.dirt9);*/
 
         this.dirt2_1 = this.add.image(700, 100, 'dirt2').setScale(.3).setInteractive();
         this.dirt2_2 = this.add.image(300, 100, 'dirt2').setScale(.4).setInteractive();
@@ -87,14 +73,6 @@ class MyScene extends Phaser.Scene {
         this.dirt2 = this.add.image(630,350, 'dirt').setScale(.6).setInteractive();
         this.dirt3 = this.add.image(400,400, 'dirt').setScale(.7).setInteractive();
 
-        /*this.handleObjectInput(this.dirt2_1);
-        this.handleObjectInput(this.dirt2_2);
-        this.handleObjectInput(this.dirt2_3);
-        this.handleObjectInput(this.sand2);
-        this.handleObjectInput(this.sand3);
-        this.handleObjectInput(this.dirt2);
-        this.handleObjectInput(this.dirt3);*/
-
         this.dirt6 = this.add.image(600,450, 'dirt').setScale(.4).setInteractive();
         this.dirt2_4 = this.add.image(110, 500, 'dirt2').setScale(.4).setInteractive();
         this.gravel4 = this.add.image(400,300, 'gravel').setScale(.25).setInteractive();
@@ -102,24 +80,11 @@ class MyScene extends Phaser.Scene {
         this.gravel6 = this.add.image(750,300, 'gravel').setScale(.35).setInteractive();
         this.dirt2_8 = this.add.image(460, 50, 'dirt2').setScale(.25).setInteractive();
 
-        /*this.handleObjectInput(this.dirt6);
-        this.handleObjectInput(this.dirt2_4);
-        this.handleObjectInput(this.gravel4);
-        this.handleObjectInput(this.gravel5);
-        this.handleObjectInput(this.gravel6);
-        this.handleObjectInput(this.dirt2_8);*/
-
         this.gravel3 = this.add.image(700,150, 'gravel').setScale(.2).setInteractive();
         this.dirt8 = this.add.image(130,450, 'dirt').setScale(.5).setInteractive();
         this.dirt9 = this.add.image(50,50, 'dirt').setScale(.4).setInteractive();
         this.gravel7 = this.add.image(200,200, 'gravel').setScale(.45).setInteractive();
         this.gravel8 = this.add.image(550,200, 'gravel').setScale(.3).setInteractive();
-
-        /*this.handleObjectInput(this.gravel3);
-        this.handleObjectInput(this.dirt8);
-        this.handleObjectInput(this.dirt9);
-        this.handleObjectInput(this.gravel7);
-        this.handleObjectInput(this.gravel8);*/
 
         this.gravel9 = this.add.image(500,550, 'gravel').setScale(.35).setInteractive();
         this.dirt4 = this.add.image(400,170, 'dirt').setScale(.5).setInteractive();
@@ -127,13 +92,6 @@ class MyScene extends Phaser.Scene {
         this.sand1 = this.add.image(350, 160, 'sand').setScale(.3).setInteractive();
         this.sand8 = this.add.image(100, 50, 'sand').setScale(.3).setInteractive();
         this.sand9 = this.add.image(550, 50, 'sand').setScale(.3).setInteractive();
-
-        /*this.handleObjectInput(this.gravel9);
-        this.handleObjectInput(this.dirt4);
-        this.handleObjectInput(this.dirt5);
-        this.handleObjectInput(this.sand1);
-        this.handleObjectInput(this.sand8);
-        this.handleObjectInput(this.sand9);*/
 
         this.input.on('gameobjectdown', this.onClicked.bind(this));
       }
