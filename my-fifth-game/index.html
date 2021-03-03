@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hello! Amaze!</title>
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>Eight O'clock At The Oasis</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+What is original about your game?
+</li>
+The game now follows the typical Snake game set up. However, if you accidentally eat the poison apple or collide with the other unfriendly bird, you lose part of your chain.<br><br>
+
+<li><strong>Technical Merit:</strong>
+What is interesting about your game technology?
+</li>
+Along with the coconuts adding more birds to your chain. Going over the wrong fruit or colliding with the other bird on screen forces you to lose part of your chain. If you lose your entire chain, you lose the game.<br><br>
+
+<li><strong>Prototype Postmortem:</strong>
+What did you learn from this prototype?
+What was the easiest or hardest part of making it?
+</li>
+I learned how to remove a member of a sprite group and generally how all teh children sprites work. I also learned how to make the other sprites random along with the coconut.<br><br>
+
+<li><strong>Prototype Assets:</strong>
+Did you make your prototype assets from scratch? Did you borrow them? Cite your sources here.
+<ul>
+<li>Background from: <a href="https://www.vecteezy.com/free-vector/nature">Nature Vectors by Vecteezy</a></li>
+<li>Palm Tree from: <a href="https://opengameart.org/content/palm-tree-2">OpenGameArt.org</a></li>
+<li>Coconut from: <a href="https://opengameart.org/content/fruits-1">OpenGameArt.org</a></li>
+<li>Bird: <a href="https://opengameart.org/content/colorful-bird-flying-animation">OpenGameArt.org</a></li>
+<li>Music: <a href="https://opengameart.org/content/crisis-youre-dehydrated">Crisis! You're Dehydrated!</a></li>
+<li>Apple: <a href="https://opengameart.org/content/apple-3">OpenGameArt.org</a></li>
+<li>Peacock: <a href="https://opengameart.org/content/peacock-walking-animation">OpenGameArt.org</a></li>
+</ul>
+</li><br><br>
+
+<li><strong>Prototype Closest Other Game:</strong>
+Which other game most closely resembles your game? If you are borrowing code from a Phaser Example, you must say so here. If you borrow code from elsewhere, you must say so here.
+</li>
+<ul>
+<li>Closest to Snake. Code borrowed from here: <a href="https://phaser.io/examples/v3/view/games/snake/part7#">Snake</a>.</li>
+<li>Code also borrowed from <a href="https://phaser.io/examples/v2/loader/load-audio">here</a> for background sound help.</li>
+<li>Code help from <a href="https://stackoverflow.com/questions/48280843/how-to-remove-only-one-sprite-of-a-group-of-sprites-in-a-game">here</a> for removing from the group</li>
+<li>As well as from help from the <a href="https://photonstorm.github.io/phaser3-docs/Phaser.GameObjects.Group.html#remove__anchor"> Phaser Documentation</a></li>
+</ul><br><br>
+
+<li><strong>High Concept:</strong>
+A one-sentence summary of your game.
+</li>
+Help the bird and all their friends find the coconuts on the screen!<br><br>
+
+<li><strong>Theme:</strong>
+State which of the Storymatic themes you used.
+</li>
+I used the oasis theme. It can be seen through the background which is of a desert oasis. (From Digital Assignment 2)<br><br>
+
+<li><strong>Mandated Variety:</strong>
+State which input, randomness, genre, and play style you used in this prototype.
+</li>
+Input: Keyboard
+Randomness: A lot fo randomness
+Genre: Snake
+Play Style: Competitor<br><br>
+
+<li><strong>Prototype Goal:</strong>
+What game mechanic is this prototype evaluating?
+</li><br><br>
+This is evaluating removing items from the chain. It is also evaluating how phaser groups work.
+
+<li><strong>Player Experience Goals:</strong>
+What experience do you want players to have when playing your game?
+</li>
+It should be a fun and challening game against yourself to get as many birds on the screen as possible!<br><br>
+
+<li><strong>Gameplay:</strong>
+A paragraph describing the actions the player can perform, the system dynamics, and the core mechanic. Include a concise explanation of the prototype’s inputs and their expected effects (how to play). You can also describe game play that is not in the prototype. You may include mock-up images for parts of the game not in the prototype.
+</li>
+The bird character moves via the arrow keys. The bird can move up, down, left, and right. It can also travel through the bounds of the game to come out the other side. The goal is grab the coconuts on the screen (you must hover directly over the center of the coconut). You die if your chain of birds touches itself. The bird also must avoid the poison apple and unfriendly peacock. Colliding with those makes you lose part of your chain. If you lose your entire chain, you lose too. <br><br>
+
+<li><strong>Strategies:</strong>
+What player strategies do you expect will be effective at playing this game?
+</li>
+As your trail of birds gets larger, it's best to move in large patterns you avoid touching the chain to itself. <br><br>
+
+<li><strong>Story/Setting/Premise:</strong>
+A paragraph about the world your game is set in and who the characters are. What makes the game world and its occupants unique and interesting? Do the tokens represent something? If the game has a backstory, mention it here. If the game is abstract, then say so.
+How will the dramatic tension interact with the gameplay tension?
+</li>
+After flying for days through the desert, Tweety the bird stumbles upon a desert Oasis. As their flock joins them, they search for all the coconuts available in order to quench their thirst and fight their hunger. Unfortunately, each bird of the flock is getting very
+testy from hunger and does not want any of the other members of the flock to bother it while they search for food. Be careful to avoid touching other members of the flock! Also avoid the strange looking apple and the mean looking peacock. They might make you lose part of your new flock!<br><br>
+
+
+<li><strong>Target Audience:</strong>
+A single sentence that describes the demographic you're trying to reach.
+</li>
+It is a fun and challenging game for everyone that involves very little gaming knowledge.<br><br>
+
+<li><strong>Play Time:</strong>
+How long does your game take to play?
+</li>
+It depends on how long you are able to make your chain! But, on average, 3-5 minutes.<br><br>
+
+</ul>
+</div>
+
+<script src="js/phaser.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
