@@ -18,7 +18,7 @@ let rollValue = 0;
 let displayText;
 
 function preload() {
-        this.load.image('board', 'assets/board.png');
+        this.load.image('board', 'assets/board.PNG');
         this.load.image('bluepiece', 'assets/bluepiece.png');
         this.load.image('yellowpiece', 'assets/yellowpiece.png');
         this.load.image('redsquare', 'assets/redsquare.png');
