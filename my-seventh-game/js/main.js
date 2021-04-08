@@ -45,7 +45,7 @@ function create() {
             this.add.sprite(pointer.x, pointer.y, 'redsquare');
         }, this);
 
-        whoTurn = this.add.text(570, 300, 'Your Turn', {fill: 'white'});
+        displayText = this.add.text(570, 300, 'Your Turn', {fill: 'white'});
 
         var die = this.add.sprite(575, 250, 'die').setScale(.5).setInteractive();
 
