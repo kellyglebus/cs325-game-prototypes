@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hello! Amaze!</title>
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>Your game title</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+What is original about your game?<br>
+The game itself is supposed to be a hybrid between chess and battleship. Originally, the player wouldn't be able to see the oher players board so attacks would be more random like in battleship.
+That design didn't work well for the set up of the analog game iteration, so instead, the die creates the randomness and players move according to the die roll.
+</li>
+
+<li><strong>Technical Merit:</strong>
+What is interesting about your game technology?<br>
+The computer plays against the player! On certain rolls, the computer places down a red square, or it moves a piece. The moves are decided by what number is rolled by the die. Pieces are attached to certain numbers and take their turn accordingly.
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+What did you learn from this prototype?<br>
+What was the easiest or hardest part of making it?<br>
+It was hard to iron out how the pieces were going to move and how the red squares were going to be placed. Unfortunately, I couldn't find a way to indicate if a red square is put over the computer's pieces or how to prevent it from moving into a space 
+with a red square. There also wasn't a great way to check if a piece was already in a position. A lot of the methods in phaser need exact coordinates, so if one of the pieces was barely off, its not able to detect them in the space. So between those two 
+problems, its not exactly fully playable. However, it is very close.
+</li>
+
+<li><strong>Prototype Assets:</strong>
+Did you make your prototype assets from scratch? Did you borrow them? Cite your sources here.
+<ul>
+<li><a href="https://unsplash.com/photos/2WE_V_dh0B0"> Die </a></li>
+<li> <a href="https://freesound.org/people/schoman3/sounds/506914/">Die Roll Sound</a></li>
+</ul>
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+Which other game most closely resembles your game? If you are borrowing code from a Phaser Example, you must say so here. If you borrow code from elsewhere, you must say so here.
+</li>
+It closely resembles either battleship or chess/checkers. I wanted the game to be like battleship except you could move your pieces around the board as the game goes on. This is of course similar to the previous iteration<br>
+Code used:<br>
+<li> <a href="https://labs.phaser.io/edit.html?src=src/game%20objects/container/draggable%20container.js&v=3.54.0">Making pieces draggable</a></li>
+<li> <a href="https://labs.phaser.io/edit.html?src=src/input/multitouch/multi%20drag.js&v=3.54.0">Making things draggable 2</a></li>
+<li> <a href="https://labs.phaser.io/edit.html?src=src/input/mouse/click%20sprite.js&v=3.54.0">Clickable die</a></li>
+<li> <a href="https://rexrainbow.github.io/phaser3-rex-notes/docs/site/random/">Picking a random number</a></li>
+<li> <a href="https://labs.phaser.io/edit.html?src=src/input/mouse/mouse%20down.js&v=3.54.0">Clicking to leave the red square</a></li>
+
+<li><strong>High Concept:</strong>
+A one-sentence summary of your game.
+</li>
+Play with a friend and try to best them with luck and strategy in Castle Fight
+
+<li><strong>Prototype Goal:</strong>
+What game mechanic is this prototype evaluating?
+</li>
+This is evaluating playability digitally. The game works in an analog form and its time to set it up digitally.
+
+<li><strong>Player Experience Goals:</strong>
+What experience do you want players to have when playing your game?
+</li>
+They should have fun and competitive when playing each other.
+
+<li><strong>Theme:</strong>
+State which of the Storymatic themes you used.
+</li>
+<p>No themes were required. Copies the gameplay of the analog prototype</p></br>
+
+
+<li><strong>Mandated Variety:</strong>
+State which input, randomness, genre, and play style you used in this prototype.
+</li>
+<li>Input: Mouse</li>
+<li>Randomness: Deterministic </li>
+<li>Play Styles: Competitor</li>
+<li>Genres: fighting</li>
+</br>
+
+<li><strong>Gameplay:</strong>
+A paragraph describing the actions the player can perform, the system dynamics, and the core mechanic. Include a concise explanation of the prototype’s inputs and their expected effects (how to play). You can also describe game play that is not in the prototype. You may include mock-up images for parts of the game not in the prototype.
+</li>
+Yellow player moves first and rolls the die. Player then has 3 choices based on the die roll. Player can move their piece (on their side of the red line) the same number of spaces as the die roll. Or they can trace a path to the other side and attack the opponents piece. The player's piece remains on their side, but a red square is place on
+the same board where the attack happens. If no opposing pieces are within reach, player can also place a red square on an open space. Spaces cannot be moved to if they are occupied by a red square. You can begin to block in the opposing player with this strategy. After one of the three moves is taken, the turn alternates to the other player 
+and the same game play occurs. This alternation occurs until all one sides pieces are covered by a red square.
+
+<li><strong>Strategies:</strong>
+What player strategies do you expect will be effective at playing this game?
+</li>
+If you are unable to attack pieces, use the ability to put down red squares to block your opposing player in.
+
+<li><strong>Story/Setting/Premise:</strong>
+A paragraph about the world your game is set in and who the characters are. What makes the game world and its occupants unique and interesting? Do the tokens represent something? If the game has a backstory, mention it here. If the game is abstract, then say so.
+How will the dramatic tension interact with the gameplay tension?
+</li>
+Guard your side of the battlefield! You are under attack from an opposing kingdom and must protect your troops on the battlefield. Be strategic in your attack moves and successfully vanquish the opposing army!
+
+<li><strong>Target Audience:</strong>
+A single sentence that describes the demographic you're trying to reach.
+</li>
+Player 10+ since the game rules can be confusing to understand.
+
+<li><strong>Play Time:</strong>
+How long does your game take to play?
+</li>
+5-10 minutes
+
+</ul>
+</div>
+
+<!-- main.js must come at the end since it expects the HTML to have been created. -->
+<script src="js/main.js" type="module"></script>
+</body>
+</html>
