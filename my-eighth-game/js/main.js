@@ -34,6 +34,8 @@ let yellowSkip;
 let takePoint;
 let takePointText;
 
+
+//preload
 function preload() {
         this.load.image('board', 'assets/board.png');
         this.load.image('die', 'assets/die.png');
