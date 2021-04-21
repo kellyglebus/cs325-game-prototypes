@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hello! Amaze!</title>
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>Guess What</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+What is original about your game?<br>
+It's all a fun game of chance! Roll the die to see if you get to pull a card off the board. If you can, then test your luck with pulling your correct color for points! I think that the amount of randomness in the game is unique. 
+There isn't a lot of strategy, so it makes it more of fun/goofy game to able to play and laugh with friends about. The game is much more about luck than anything else and I think that tends to be something you don't see as often in 
+digital or analog games. 
+</li>
+
+<li><strong>Technical Merit:</strong>
+What is interesting about your game technology?<br>
+The game keeps track of lots of stuff! Once the game is started, it keeps track of player's points and who's turn it is. It is able to correct tell you which player's turn it is even when a turn is being skipped. The cover's over the 
+square disappear as you drag them off so that the board is kept nice and orderly. The dice as a nice sound going along with it to make it more realistic, the random number is generate within the roll and shown on the screen. Currently,
+the computer needs you to indicate what was underneath the cover, but I'm working on that being automatic in the game. 
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+What did you learn from this prototype?<br>
+What was the easiest or hardest part of making it?<br>
+I learned a lot about keeping track of scores. It was difficult to keep up with all the combinations that could happen, when the score changed, and when the player's turns changed as well. I had a rule in the analog game that when you rolled 
+a 6 you could steal a point from the other player if they had any, but I had a very difficult time trying to figure out how to incorporate that so the button wasn't available constantly. Also that you got the option to choose whether to 
+do that or take another cover from the board. That's definitely what I will be working on for the next iteraiton. That and trying to make it so you can play against the computer. 
+</li>
+
+<li><strong>Prototype Assets:</strong>
+Did you make your prototype assets from scratch? Did you borrow them? Cite your sources here.
+<ul>
+<li><a href="https://unsplash.com/photos/2WE_V_dh0B0"> Die </a></li>
+<li><a href="https://freesound.org/people/schoman3/sounds/506914/">Die Roll Sound</a></li>
+<li> I made the board, squares, and did the text through phaser </li>
+</ul>
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+Which other game most closely resembles your game? If you are borrowing code from a Phaser Example, you must say so here. If you borrow code from elsewhere, you must say so here.
+</li>
+I can't really think of a game that it's super similar to. It has some similar properties of roulette in a way. I'm sure that there is a children's card game that it's close to. The board and die set up are similar to my previous digital iteration<br>
+Code used:<br>
+<li> <a href="https://labs.phaser.io/edit.html?src=src/game%20objects/container/draggable%20container.js&v=3.54.0">Making pieces draggable</a></li>
+<li> <a href="https://labs.phaser.io/edit.html?src=src/input/multitouch/multi%20drag.js&v=3.54.0">Making things draggable 2</a></li>
+<li> <a href="https://labs.phaser.io/edit.html?src=src/input/mouse/click%20sprite.js&v=3.54.0">Clickable die</a></li>
+<li> <a href="https://rexrainbow.github.io/phaser3-rex-notes/docs/site/random/">Picking a random number</a></li>
+<li> <a href= "https://photonstorm.github.io/phaser3-docs/Phaser.GameObjects.Text.html">Destroy game objects</a></li>
+
+<li><strong>High Concept:</strong>
+A one-sentence summary of your game.
+</li>
+Play with a friend and try your hand at this hilariously random game. 
+
+<li><strong>Prototype Goal:</strong>
+What game mechanic is this prototype evaluating?
+</li>
+This is evaluating playability digitally. The game works in an analog form and its time to set it up digitally.
+
+<li><strong>Player Experience Goals:</strong>
+What experience do you want players to have when playing your game?
+</li>
+They should have fun and laugh with each other. There's little to no skill involved, so it should be fun for players.
+
+<li><strong>Theme:</strong>
+State which of the Storymatic themes you used.
+</li>
+<p>No themes were required. Copies the gameplay of the analog prototype</p></br>
+
+
+<li><strong>Mandated Variety:</strong>
+State which input, randomness, genre, and play style you used in this prototype.
+</li>
+<li>Input: Mouse</li>
+<li>Randomness: Lots of Randomness </li>
+<li>Play Styles: Competitor</li>
+<li>Genres: Puzzle</li>
+</br>
+
+<li><strong>Gameplay:</strong>
+A paragraph describing the actions the player can perform, the system dynamics, and the core mechanic. Include a concise explanation of the prototype’s inputs and their expected effects (how to play). You can also describe game play that is not in the prototype. You may include mock-up images for parts of the game not in the prototype.
+</li>
+Players pick between being blue or yellow. Yellow player goes first. Player rolls the die, if they roll a 1, 3, or 5, they are able to remove a cover from the board. If the color underneath is their own color, you gain a point. If it is the opposite color, you lose a point. A red 
+square indicates loss of turn. The turns alternate between the 2 players until all 20 of one color squares are revealed or all cards are gone. The player with the most points wins. 
+
+<li><strong>Strategies:</strong>
+What player strategies do you expect will be effective at playing this game?
+</li>
+Very few strategies possible. Once cards are being taken off, try to reason where it seems likely one of your colors might be. 
+
+<li><strong>Story/Setting/Premise:</strong>
+A paragraph about the world your game is set in and who the characters are. What makes the game world and its occupants unique and interesting? Do the tokens represent something? If the game has a backstory, mention it here. If the game is abstract, then say so.
+How will the dramatic tension interact with the gameplay tension?
+</li>
+This game doesn't really have much of a backstory to it, it's much more abstract than that. However, tensions will run high as players go head to head in Guess What! Player's try their hand at the randomness in the game and hope that it plays in their favor. 
+Players will begin to feel a little frustrated by this game of chance!
+
+<li><strong>Target Audience:</strong>
+A single sentence that describes the demographic you're trying to reach.
+</li>
+This game is for everyone. The directions are easy to understand and there is not much skill needed. 
+
+<li><strong>Play Time:</strong>
+How long does your game take to play?
+</li>
+5-10 minutes
+
+</ul>
+</div>
+
+<!-- main.js must come at the end since it expects the HTML to have been created. -->
+<script src="js/main.js" type="module"></script>
+</body>
+</html>
