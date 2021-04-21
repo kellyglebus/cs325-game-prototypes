@@ -37,14 +37,14 @@ let takePointText;
 
 //preload
 function preload() {
-        this.load.image('board', 'assets/board.png');
+        this.load.image('board', 'assets/board.PNG');
         this.load.image('die', 'assets/die.png');
-        this.load.image('cover', 'assets/cover.png');
+        this.load.image('cover', 'assets/cover.PNG');
         this.load.audio('diesound', 'assets/dice-roll.mp3');
         this.load.image('done', 'assets/doneButton.png');
-        this.load.image('blue', 'assets/blueSquare.png');
-        this.load.image('yellow', 'assets/yellowSquare.png');
-        this.load.image('red', 'assets/redSquare.png');
+        this.load.image('blue', 'assets/blueSquare.PNG');
+        this.load.image('yellow', 'assets/yellowSquare.PNG');
+        this.load.image('red', 'assets/redSquare.PNG');
     }
     
 function create() {
