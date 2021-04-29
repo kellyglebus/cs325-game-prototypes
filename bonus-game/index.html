@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hello! Amaze!</title>
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>Crazy Cards</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+What is original about your game?
+</li><br>
+The game is more about chance than anything else. You pull the covers off the cards and hope that you either find the green card or find a blue card. It's just a lucky guess for what might be under the card and I think that adds some originality to the game.
+
+<li><strong>Technical Merit:</strong>
+What is interesting about your game technology?
+</li><br>
+There is a function that removes the covers from the cards underneath so that the covers are interactive. The computer also counts how many tries you have left and also keeps track of where all the blue cards and the winning star card are. When you pull a cover off 
+the game checks that location against all other possible locations to decide if you have a winning card, an extra try, or you've used up a try. Once refresh, the game also reshuffles all the cards so you get a unique layout for the next game.
+
+<li><strong>Prototype Postmortem:</strong>
+What did you learn from this prototype?
+What was the easiest or hardest part of making it?
+</li><br>
+I used a lot that I had been learning from my last game to create an easier to play, random game. All the cards are added through an array structure and reshuffled every game. Making sure that the correct card coordinates were being recorded and also checked at the 
+right time was hard. It was difficult also to figure out a way to make the game a little more fun to play than just pulling random cards. I added the blue cards giving you extra turns so that the player has more of a chance to actually win the game.
+
+<li><strong>Prototype Assets:</strong>
+Did you make your prototype assets from scratch? Did you borrow them? Cite your sources here.
+<ul>
+<li>I made all assets from scratch</a></li>
+</ul>
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+Which other game most closely resembles your game? If you are borrowing code from a Phaser Example, you must say so here. If you borrow code from elsewhere, you must say so here.
+</li>
+This does resemble my game 8/9. There was a lot of randomness in that game and also it used the cards under cover idea as well. This game had a much more basic concept than the other game. It was also meant to be 1 player from the start.
+
+<li><strong>High Concept:</strong>
+A one-sentence summary of your game.
+</li>
+Players remove cards randomly with the hope of finding the winning card underneath!
+
+<li><strong>Theme:</strong>
+State which of the Storymatic themes you used.
+</li>
+None were required
+
+<li><strong>Mandated Variety:</strong>
+State which input, randomness, genre, and play style you used in this prototype.
+</li>
+None were required
+
+<li><strong>Prototype Goal:</strong>
+What game mechanic is this prototype evaluating?
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+What experience do you want players to have when playing your game?
+</li>
+I want them to have fun! It's a bit of a silly game since there's really no wrong or right way to play. It's completely random, so it should be fun and a little mindless as well. 
+
+<li><strong>Gameplay:</strong>
+A paragraph describing the actions the player can perform, the system dynamics, and the core mechanic. Include a concise explanation of the prototype’s inputs and their expected effects (how to play). You can also describe game play that is not in the prototype. You may include mock-up images for parts of the game not in the prototype.
+</li>
+Players pull the covers off of the cards. The player starts with 5 tries to pull the covers off the cards to reveal the winning green card underneath. If a blue card is underneath, the player gets 1 extra try added to their number of tries. If all tries are depleted, the game is over. If the winning card is found, the player wins!
+
+<li><strong>Strategies:</strong>
+What player strategies do you expect will be effective at playing this game?
+</li>
+There really are none. Try to reason with where you think the blue cards may be based on the other cards you have pulled.
+
+<li><strong>Story/Setting/Premise:</strong>
+A paragraph about the world your game is set in and who the characters are. What makes the game world and its occupants unique and interesting? Do the tokens represent something? If the game has a backstory, mention it here. If the game is abstract, then say so.
+How will the dramatic tension interact with the gameplay tension?
+</li>
+The game is abstract and completely random. It should be a fun game where the amount of randomness is the fun and unique portion of it. 
+
+<li><strong>Target Audience:</strong>
+A single sentence that describes the demographic you're trying to reach.
+</li>
+Rated E for everyone :)
+
+<li><strong>Play Time:</strong>
+How long does your game take to play?
+</li>
+2-3 minutes
+
+</ul>
+</div>
+
+<!-- main.js must come at the end since it expects the HTML to have been created. -->
+<script src="js/main.js" type="module"></script>
+</body>
+</html>
