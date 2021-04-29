@@ -113,7 +113,7 @@ class MyScene extends Phaser.Scene {
 
 
         this.input.on('drag', function (pointer, gameObject, dragX, dragY) {
-            if (gameObject.X == star[0] && gameObject.y == star[1]){
+            if (gameObject.x == star[0] && gameObject.y == star[1]){
                 found = true;
             }
             for (let i = 0; i < 2; i++){

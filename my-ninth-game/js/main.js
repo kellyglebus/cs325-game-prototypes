@@ -42,7 +42,66 @@ let compTurn;
 let pull;
 let playerSkip;
 let compSkip;
+let pullColor;
+let extraText;
 
+let cover11;
+let cover12;
+let cover13;
+let cover14;
+let cover15;
+let cover16;
+let cover17;
+
+let cover21;
+let cover22;
+let cover23;
+let cover24;
+let cover25;
+let cover26;
+let cover27;
+
+let cover31;
+let cover32;
+let cover33;
+let cover34;
+let cover35;
+let cover36;
+let cover37;
+
+let cover41;
+let cover42;
+let cover43;
+let cover44;
+let cover45;
+let cover46;
+let cover47;
+
+let cover51;
+let cover52;
+let cover53;
+let cover54;
+let cover55;
+let cover56;
+let cover57;
+
+let cover61;
+let cover62;
+let cover63;
+let cover64;
+let cover65;
+let cover66;
+let cover67;
+
+let cover71;
+let cover72;
+let cover73;
+let cover74;
+let cover75;
+let cover76;
+let cover77;
+
+let coverCollect;
 
 //preload
 function preload() {
@@ -90,6 +149,7 @@ function create() {
        coordBlu = []
        let startX = 45;
        let startY = 75;
+       blueSkip = false;
 
        for (let i = 0; i < 7; i++){
            for (let j = 0; j < 7; j++){
@@ -121,61 +181,71 @@ function create() {
        console.log(coordYel);
 
 
-        var cover11 = this.add.image(45,295, 'cover').setScale(.61).setInteractive({ draggable: true });
-        var cover12 = this.add.image(45,75, 'cover').setScale(.61).setInteractive({ draggable: true });
-        var cover13 = this.add.image(45,130, 'cover').setScale(.61).setInteractive({ draggable: true });
-        var cover14 = this.add.image(45,185, 'cover').setScale(.61).setInteractive({ draggable: true });
-        var cover15 = this.add.image(45,240, 'cover').setScale(.61).setInteractive({ draggable: true });
-        var cover16 = this.add.image(45,350, 'cover').setScale(.61).setInteractive({ draggable: true });
-        var cover17 = this.add.image(45,405, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover15 = this.add.image(45,295, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover11 = this.add.image(45,75, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover12 = this.add.image(45,130, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover13 = this.add.image(45,185, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover14 = this.add.image(45,240, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover16 = this.add.image(45,350, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover17 = this.add.image(45,405, 'cover').setScale(.61).setInteractive({ draggable: true });
 
-        var cover25 = this.add.image(120,295, 'cover').setScale(.61).setInteractive({ draggable: true });
-        var cover21 = this.add.image(120,75, 'cover').setScale(.61).setInteractive({ draggable: true });
-        var cover22 = this.add.image(120,130, 'cover').setScale(.61).setInteractive({ draggable: true });
-        var cover23 = this.add.image(120,185, 'cover').setScale(.61).setInteractive({ draggable: true });
-        var cover24 = this.add.image(120,240, 'cover').setScale(.61).setInteractive({ draggable: true });
-        var cover26 = this.add.image(120,350, 'cover').setScale(.61).setInteractive({ draggable: true });
-        var cover27 = this.add.image(120,405, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover25 = this.add.image(120,295, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover21 = this.add.image(120,75, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover22 = this.add.image(120,130, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover23 = this.add.image(120,185, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover24 = this.add.image(120,240, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover26 = this.add.image(120,350, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover27 = this.add.image(120,405, 'cover').setScale(.61).setInteractive({ draggable: true });
 
-        var cover31 = this.add.image(195,75, 'cover').setScale(.61).setInteractive({ draggable: true });
-        var cover32 = this.add.image(195,130, 'cover').setScale(.61).setInteractive({ draggable: true });
-        var cover33 = this.add.image(195,185, 'cover').setScale(.61).setInteractive({ draggable: true });
-        var cover34 = this.add.image(195,240, 'cover').setScale(.61).setInteractive({ draggable: true });
-        var cover35 = this.add.image(195,295, 'cover').setScale(.61).setInteractive({ draggable: true });
-        var cover36 = this.add.image(195,350, 'cover').setScale(.61).setInteractive({ draggable: true });
-        var cover37 = this.add.image(195,405, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover31 = this.add.image(195,75, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover32 = this.add.image(195,130, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover33 = this.add.image(195,185, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover34 = this.add.image(195,240, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover35 = this.add.image(195,295, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover36 = this.add.image(195,350, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover37 = this.add.image(195,405, 'cover').setScale(.61).setInteractive({ draggable: true });
 
-        var cover41 = this.add.image(270,75, 'cover').setScale(.61).setInteractive({ draggable: true });
-        var cover42 = this.add.image(270,130, 'cover').setScale(.61).setInteractive({ draggable: true });
-        var cover43 = this.add.image(270,185, 'cover').setScale(.61).setInteractive({ draggable: true });
-        var cover44 = this.add.image(270,240, 'cover').setScale(.61).setInteractive({ draggable: true });
-        var cover45 = this.add.image(270,295, 'cover').setScale(.61).setInteractive({ draggable: true });
-        var cover46 = this.add.image(270,350, 'cover').setScale(.61).setInteractive({ draggable: true });
-        var cover47 = this.add.image(270,405, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover41 = this.add.image(270,75, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover42 = this.add.image(270,130, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover43 = this.add.image(270,185, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover44 = this.add.image(270,240, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover45 = this.add.image(270,295, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover46 = this.add.image(270,350, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover47 = this.add.image(270,405, 'cover').setScale(.61).setInteractive({ draggable: true });
 
-        var cover51 = this.add.image(345,75, 'cover').setScale(.61).setInteractive({ draggable: true });
-        var cover52 = this.add.image(345,130, 'cover').setScale(.61).setInteractive({ draggable: true });
-        var cover53 = this.add.image(345,185, 'cover').setScale(.61).setInteractive({ draggable: true });
-        var cover54 = this.add.image(345,240, 'cover').setScale(.61).setInteractive({ draggable: true });
-        var cover55 = this.add.image(345,295, 'cover').setScale(.61).setInteractive({ draggable: true });
-        var cover56 = this.add.image(345,350, 'cover').setScale(.61).setInteractive({ draggable: true });
-        var cover57 = this.add.image(345,405, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover51 = this.add.image(345,75, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover52 = this.add.image(345,130, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover53 = this.add.image(345,185, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover54 = this.add.image(345,240, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover55 = this.add.image(345,295, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover56 = this.add.image(345,350, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover57 = this.add.image(345,405, 'cover').setScale(.61).setInteractive({ draggable: true });
 
-        var cover61 = this.add.image(420,75, 'cover').setScale(.61).setInteractive({ draggable: true });
-        var cover62 = this.add.image(420,130, 'cover').setScale(.61).setInteractive({ draggable: true });
-        var cover63 = this.add.image(420,185, 'cover').setScale(.61).setInteractive({ draggable: true });
-        var cover64 = this.add.image(420,240, 'cover').setScale(.61).setInteractive({ draggable: true });
-        var cover65 = this.add.image(420,295, 'cover').setScale(.61).setInteractive({ draggable: true });
-        var cover66 = this.add.image(420,350, 'cover').setScale(.61).setInteractive({ draggable: true });
-        var cover67 = this.add.image(420,405, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover61 = this.add.image(420,75, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover62 = this.add.image(420,130, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover63 = this.add.image(420,185, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover64 = this.add.image(420,240, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover65 = this.add.image(420,295, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover66 = this.add.image(420,350, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover67 = this.add.image(420,405, 'cover').setScale(.61).setInteractive({ draggable: true });
 
-        var cover71 = this.add.image(495,75, 'cover').setScale(.61).setInteractive({ draggable: true });
-        var cover72 = this.add.image(495,130, 'cover').setScale(.61).setInteractive({ draggable: true });
-        var cover73 = this.add.image(495,185, 'cover').setScale(.61).setInteractive({ draggable: true });
-        var cover74 = this.add.image(495,240, 'cover').setScale(.61).setInteractive({ draggable: true });
-        var cover75 = this.add.image(495,295, 'cover').setScale(.61).setInteractive({ draggable: true });
-        var cover76 = this.add.image(495,350, 'cover').setScale(.61).setInteractive({ draggable: true });
-        var cover77 = this.add.image(495,405, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover71 = this.add.image(495,75, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover72 = this.add.image(495,130, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover73 = this.add.image(495,185, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover74 = this.add.image(495,240, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover75 = this.add.image(495,295, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover76 = this.add.image(495,350, 'cover').setScale(.61).setInteractive({ draggable: true });
+        cover77 = this.add.image(495,405, 'cover').setScale(.61).setInteractive({ draggable: true });
+
+        coverCollect = [
+            [cover11, cover21, cover31, cover41, cover51, cover61, cover71],
+            [cover12, cover22, cover32, cover42, cover52, cover62, cover72],
+            [cover13, cover23, cover33, cover43, cover53, cover63, cover73],
+            [cover14, cover24, cover34, cover44, cover54, cover64, cover74],
+            [cover15, cover25, cover35, cover45, cover55, cover65, cover75],
+            [cover16, cover26, cover36, cover46, cover56, cover66, cover76],
+            [cover17, cover27, cover37, cover47, cover57, cover67, cover77],
+        ]
 
         playerPull = [];
         this.input.on('drag', function (pointer, gameObject, dragX, dragY) {
@@ -183,10 +253,47 @@ function create() {
             playerPull.push([gameObject.x, gameObject.y]);
             gameObject.x = dragX;
             gameObject.y = dragY;
-            gameObject.destroy();
+            for (let i = 0; i < 20; i++){
+                if (coordBlu[i][0] == gameObject.x && coordBlu[i][1] == gameObject.y){
+                    pullColor = 'blue';
+                    let x = Math.ceil((coordBlu[i][0]/75)) - 1;
+                    let y = Math.floor((coordBlu[i][1]/55)) - 1;
+                    if (y < 0){
+                        y = 0;
+                    }
+                    coverCollect[x].splice(y, 0, 'x');
+                    coordBlu.splice(i, 1);
+                }
+                else if (coordYel[i][0] == gameObject.x && coordYel[i][1] == gameObject.y){
+                    pullColor = 'yellow';
+                    let x = Math.ceil((coordYel[i][0]/75)) - 1;
+                    let y = Math.floor((coordYel[i][1]/55)) - 1;
+                    if (y < 0){
+                        y = 0;
+                    }
+                    coverCollect[x].splice(y, 0, 'x');
+                    coordYel.splice(i, 1);
+                }
+                else{
+                    if (!(i >= coordRed.length)){
+                        pullColor = 'red';
+                        console.log(coordRed);
+                        let x = Math.ceil((coordRed[i][0]/75)) - 1;
+                        let y = Math.floor((coordRed[i][1]/55)) - 1;
+                        if (y < 0){
+                            y = 0;
+                        }
+                        coverCollect[x].splice(y, 0, 'x');
+                        coordRed.splice(i, 1);
+                    }
+                }
+            }
             pull = true;
+            gameObject.destroy();
     
         });
+
+        extraText = this.add.text(560, 120, 'Roll \nTo \nStart!', {fill: 'white'});
 
         playerTurnShow = this.add.text(400, 10, 'Blue\'s Turn', {fill: 'white'});
 
@@ -202,6 +309,16 @@ function create() {
             this.sound.play('diesound');
             rollValue = Phaser.Math.Between(1, 6);
             roll = true;
+            displayText.setText('' + rollValue).setX(580);
+            playerTurn = true;
+            compTurn = false; 
+            if (rollValue == 1 || rollValue == 3 || rollValue == 5){
+                extraText.setText('Pull A \n Card!');
+                compTurn = false;
+            }
+            else{
+                setTimeout('', 3000);
+            }
         }, this);
     }
 
@@ -225,177 +342,97 @@ function shuffle(arr){
     
 function update() {
     displayText.setText('' + rollValue).setX(580);
-    if (compTurn){
-        this.sound.play('diesound');
-        rollValue = Phaser.Math.Between(1, 6);
-        roll = true; 
-    } 
     if (roll){
-        if (rollValue == 1 || rollValue == 3 || rollValue == 5){
-            let found = false;
-            let count = 0;
-            while (found === false && (pull === true)){
-                if (playerSkip){
-                    turn = 'Blue'
-                    playerSkip = false
-                }
-                else if (compSkip){
-                    turn = 'Yellow'
-                    compSkip = false;
-                }
-                else if ((coordBlu[count][0] === playerPull[0][0]) && ((coordBlu[count][1] === playerPull[0][1]))){
-                    if (playerTurn){
-                        bluePlayerScore = bluePlayerScore + 1;
-                        blueScore.setText('Blue\'s Score: ' + bluePlayerScore);
-                        playerTurn = false;
-                        compTurn = true;
-                        turn = 'Yellow';
+       if (compTurn){
+           playerTurnShow.setText('Yellow\'s Turn');
+           setTimeout('', 3000);
+            this.sound.play('diesound');
+            rollValue = Phaser.Math.Between(1, 6);
+            roll = true; 
+            displayText.setText('' + rollValue).setX(580);
+            if (rollValue == 1 || rollValue == 3 || rollValue == 5){
+                extraText.setText('Pull A \n Card!')
+                let cardColor = Phaser.Math.Between(0, 2);
+                if (cardColor == 0){
+                    pick = Phaser.Math.Between(0, coordBlu.length -1);
+                    let x = Math.ceil((coordBlu[pick][0]/75)) - 1;
+                    let y = Math.floor((coordBlu[pick][1]/55)) - 1;
+                    if (y < 0){
+                        y = 0;
                     }
-                    else{
-                        yellowPlayerScore = yellowPlayerScore - 1;
-                        yellowScore.setText('Yellow\'s Score: ' + yellowPlayerScore);
-                        playerTurn = true;
-                        compTurn = false;
-                        turn = 'Blue';
-                    }
-                    found = true;
+                    let temp = coverCollect[x][y];
+                    temp.destroy();
+                    coverCollect[x].splice(y, 1);
+                    coverCollect[x].splice(y, 0, 'x');
+                    yellowPlayerScore--;
+                    yellowScore.setText('Yellow\'s Score: ' + yellowPlayerScore);
+                    coordBlu.splice(pick, 1)
+
                 }
-                else if (((coordYel[count][0] === playerPull[0][0]) && ((coordYel[count][1] === playerPull[0][1])))){
-                    if (playerTurn){
-                        bluePlayerScore = bluePlayerScore - 1;
-                        blueScore.setText('Blue\'s Score: ' + bluePlayerScore);
-                        playerTurn = false;
-                        compTurn = true;
-                        turn = 'Yellow';
+                else if (cardColor == 1){
+                    pick = Phaser.Math.Between(0, coordYel.length - 1);
+                    let x = Math.ceil((coordYel[pick][0]/75)) - 1;
+                    let y = Math.floor((coordYel[pick][1]/55)) - 1;
+                    if (y < 0){
+                        y = 0;
                     }
-                    else{
-                        yellowPlayerScore = yellowPlayerScore + 1;
-                        yellowScore.setText('Yellow\'s Score: ' + yellowPlayerScore);
-                        playerTurn = true;
-                        compTurn = false;
-                        turn = 'Blue';
-                    }
-                    found = true;
+                    let temp = coverCollect[x][y];
+                    temp.destroy();
+                    coverCollect[x].splice(y, 1);
+                    coverCollect[x].splice(y, 0, 'x');
+                    yellowPlayerScore++;
+                    yellowScore.setText('Yellow\'s Score: ' + yellowPlayerScore);
+                    coordYel.splice(pick, 1)
+                    compTurn = false;
+                 }
+                else{
+                    pick = Phaser.Math.Between(0, coordRed.length - 1);
+                    let x = Math.ceil((coordRed[pick][0]/75)) - 1;
+                    let y = Math.floor((coordRed[pick][1]/55)) - 1;
+                    if (y < 0){
+                        y = 0;
+                     }
+                    let temp = coverCollect[x][y];
+                    temp.destroy();
+                    coverCollect[x].splice(y, 1);
+                    coverCollect[x].splice(y, 0, 'x');
+                    coordRed.splice(pick, 1)
+                    compTurn = false;
                 }
-                else if ((count < 9) && (coordRed[count][0] === playerPull[0][0]) && ((coordRed[count][1] === playerPull[0][1]))){
-                    if (playerTurn){
-                        playerSkip = true;
-                    }
-                    else{
-                        compSkip = true;
-                    }
-                    found = true;
-                }
-                else if (count > 20){
-                    found = true;
-                    console.log('oops')
-                }
-                count += 1 ;
             }
-        }
-        playerTurnShow.setText(turn + '\'s Turn');
-        roll = false;
-        pick = false;
-        pull = false;
+            playerTurnShow.setText('Blue\'s Turn');
+            roll = false;  
+         }
+       else{
+           if (pull){
+            if (pullColor == 'blue'){
+                bluePlayerScore++;
+                compTurn = true;
+                roll = true;
+                pull = false;
+            }
+            else if (pullColor == 'yellow'){
+                bluePlayerScore--;
+                compTurn = true;
+                roll = true;
+                pull = false;
+            }
+            else if (pullColor == 'red'){
+                extraText.setText('Lose a \nturn!');
+                compTurn = true;
+                roll = true;
+                pull = false;
+            }
+           }
+           else if (rollValue == 2 || rollValue == 4 || rollValue == 6){
+            blueScore.setText('Blue\'s Score: ' + bluePlayerScore);
+            playerTurnShow.setText('Yellow\'s Turn');
+            compTurn = true;
+            roll = true;
+            pull = false;
+           }
+       } 
     }
-    
- 
-
-
-
-    // if (roll){
-    //      if (rollValue == 1 || rollValue == 3 || rollValue == 5){
-    //     //     if (playerTurn){
-    //     //         playerTurn = false;
-    //     //         let found = false;
-    //     //         let i = 0
-    //     //         let redCount = 0;
-    //     //         while(!(found)){
-    //     //             if ((coordBlu[i][0] === playerPull[0]) && (coordBlu[i][1])){
-    //     //                 found = true;
-    //     //                 bluePick = true;
-    //     //                 yellowPick = false;
-    //     //                 blueSkip = false;
-    //     //             }
-    //     //             else if ((coordYel[i][0] === playerPull[0]) && (coordYel[i][1])){
-    //     //                 found = true;
-    //     //                 bluePick = false;
-    //     //                 yellowPick = true;
-    //     //                 blueSkip = false;
-    //     //             }
-    //     //             else if ((redCount < 9) && (coordRed[i][0] === playerPull[0]) && (coordRed[i][1])){
-    //     //                 found = true;
-    //     //                 bluePick = false;
-    //     //                 yellowPick = false;
-    //     //                 blueSkip = true;
-    //     //             }
-    //     //         }
-    //     //         playerTurn = false;
-    //     //     }
-
-    //     //     if (compTurn){
-
-    //     //     }
-    //         if (pick){
-    //             if (turn == 'Yellow'){
-    //                 if (redTurn){
-    //                     turn = 'Blue';
-    //                     yellowSkip = true;
-    //                     redTurn = false;
-    //                 }
-    //                 else if (bluePick){
-    //                     yellowPlayerScore = yellowPlayerScore - 1;
-    //                     yellowScore.setText('Yellow\'s Score: ' + yellowPlayerScore);
-    //                 }
-    //                 else{
-    //                     yellowPlayerScore = yellowPlayerScore + 1;
-    //                     yellowScore.setText('Yellow\'s Score: ' + yellowPlayerScore);
-    //                 }
-    //                 if (!(blueSkip)){
-    //                     turn = 'Blue';
-    //                 }
-    //                 else{
-    //                     blueSkip = false;
-    //                 }
-    //             }
-    //             else{
-    //                 if (redTurn){
-    //                     turn = 'Yellow';
-    //                     blueSkip = true;
-    //                     redTurn = false;
-    //                 }
-    //                 else if (bluePick){
-    //                     bluePlayerScore = bluePlayerScore + 1;
-    //                     blueScore.setText('Blue\'s Score: ' + bluePlayerScore);
-    //                 }
-    //                 else{
-    //                     bluePlayerScore = bluePlayerScore - 1;
-    //                     blueScore.setText('Blue\'s Score: ' + bluePlayerScore);
-    //                 }
-    //                 if (!(yellowSkip)){
-    //                     turn = 'Yellow';
-    //                 }
-    //                 else{
-    //                     yellowSkip = false;
-    //                 }
-    //             }
-    //             playerTurn.setText(turn + '\'s Turn');
-    //             roll = false;
-    //             pick = false;
-    //         }
-    //     }
-    //     else{
-    //         if (turn == 'Yellow'){
-    //             turn = 'Blue'
-    //         }
-    //         else{
-    //             turn = 'Yellow'
-    //         }
-    //         playerTurn.setText(turn + '\'s Turn');
-    //         roll = false;
-    //         pick = false; 
-    //     }
-    // }    
 }
 
 
